@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  /* button要素はデフォルトでfont-familyを継承しない。 */
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* header */
+.header {
+  padding: 1rem 0;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.header__menu {
+  /* gapプロパティを使うために、inline要素だけどあえてdisplay:flex;を使う。 */
+  display: flex;
+  gap: 1rem;
+  /* 完全にど真ん中に設置する */
+  flex: 1;
+  justify-content: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.header__btn-container {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* hero */
+.hero {
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  max-width: 25ch;
+  margin-inline: auto;
+}
+
+.hero__description {
+  font-size: 1.2rem;
+  max-width: 60ch;
+  margin: 2rem auto;
+}
+
+/* pricing */
+.pricing__title {
+  letter-spacing: -0.05rem;
+  font-size: 2rem;
+  margin-top: 10rem;
+}
+
+.pricing__description {
+  max-width: 40ch;
+}
+
+.pricing__card-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.pricing__card {
+  border-radius: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  flex: 1;
+}
+
+.pricing__price {
+  margin-bottom: 1rem;
+}
+
+.pricing__card-description {
+  color: #a0a0a0;
+}
+
+.pricing__card-button {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+  padding:0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.pricing__card-list {
+  list-style-position: inside;
+  color: #a0a0a0;
+}
+
+.pricing__card-list-item {
+  margin-bottom: 1rem;
+}
+
+/* utility class */
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
